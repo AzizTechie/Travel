@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #F4D03F, #00bf8f);
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .form-container {
+      width: 360px;
+      background: white;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+    .form-container h2 {
+      margin-bottom: 20px;
+      color: #F4D03F;
+    }
+    .form-container input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .form-container button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      background: #F4D03F;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .form-container button:hover {
+      background: #d4b02e;
+    }
+    .message {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="loginUsername" placeholder="Username" required>
+      <input type="password" id="loginPassword" placeholder="Password" required>
+      <button type="submit">Login</button>
+      <p id="message" class="error"></p>
+    </form>
+  </div>
+
+  <script>
+    const loginForm = document.getElementById('loginForm');
+    loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const loginUsername = document.getElementById('loginUsername').value.trim();
+      const loginPassword = document.getElementById('loginPassword').value;
+      const message = document.getElementById('message');
+
+      const storedUsername = localStorage.getItem('username');
+      const storedPassword = localStorage.getItem('password');
+
+      if (loginUsername === storedUsername && loginPassword === storedPassword) {
+        message.textContent = 'Login successful!';
+        message.className = 'success';
+        setTimeout(() => {
+    window.location.href = 'index.html'; 
+  }, 1500);
+      } else {
+        message.textContent = 'Invalid username or password.';
+        message.className = 'error';
+      }
+    });
+  </script>
+</body>
+</html>

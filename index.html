@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travello</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navigation starts -->
+      <header>
+        <nav>
+            <h2>Travello</h2>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+            <script>
+              function toggleMenu() {
+                const navMenu = document.querySelector('header nav ul');
+                navMenu.classList.toggle('active');
+              }
+            </script>
+            <ul>
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="has-dropdown">
+                  <a href="#">Destination</a>
+                  <ul class="dropdown">
+                    <li><a href="ooty.html">Ooty</a></li>
+                    <li><a href="kanniyakumari.html">Kanniyakumari</a></li>
+                    <li><a href="kodaikanal.html">Kodaikanal</a></li>
+                  </ul>
+                  </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="registerButton" class="bt-33">Register</button></li>
+            </ul>
+        </nav>
+      </header>
+    <!-- Navigation ends -->
+    <script>
+      const registerButton = document.getElementById('registerButton');
+      const username = localStorage.getItem('username');
+  
+      if (username) {
+        registerButton.textContent ='HI'+' '+username;
+      } else {
+        registerButton.addEventListener('click', () => {
+          window.location.href = 'register.html';
+        });
+      }
+    </script>
+    <!-- hero section -->
+    <section class="hero">
+    
+      <video autoplay muted loop>
+        <source src="/images/back2.mp4" type="video/mp4" />
+      </video>
+     
+      <div class="hero-content">
+      <h1>Welcome to Tamil Nadu!</h1>
+      <p>Discover the land of temples,hills,beaches.</p>
+      </div>
+    </section>
+     <!-- hero section ends -->
+
+     <!-- second section -->
+      <div class="visit">
+  
+         <div class="heading">
+          <p>Start Your Journey</p>
+          <h1>Places to visit</h1>
+        </div>
+        <div class="decor">
+          <img src="/images/Ballon-1.webp" alt="">
+        </div>
+        <div class="places">
+          <div class="card">
+            <img src="/images/ooty3webp.webp" alt="Ooty">
+            <div class="text-overlay">
+              <h2>Ooty</h2>
+              <p>An ideal destination for honeymooners, solo travellers, family vacationers and also individuals who simply want to travel with friends.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/images/kanyakumari2.jpg" alt="Kanniyakumari">
+            <div class="text-overlay">
+              <h2>Kanniyakumari</h2>
+              <p>Picture-perfect sunsets, enchanting full moon nights, scrumptious coastal food, walk by the azure waters - Kanyakumari can always leave you asking for more.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/images/Kodaikanal1.jpg" alt="Kodaikanal">
+            <div class="text-overlay">
+              <h2>Kodaikanal</h2>
+              <p>Verdant valleys, with their enveloping blankets of mist, and lush mountain ranges offer a warm welcome to visitors</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+     <!-- second section ends-->
+      
+     <!-- third section -->
+     <div class="third">
+      <h2>Hosted Journeys to Extraordinary Places</h2>
+      <p>If you're looking for some of the best travel experiences to explore in Tamil Nadu, you've arrived at the right spot!</p>
+      <button><a href="about.html" style="text-decoration: none;color: white;">KNOW MORE</a></button>
+    </div>
+     <!-- third section ends -->
+
+      <!-- Gallery section -->
+    <section class="gallery">
+      <div class="gallery-heading">
+          <p>Explore Tamil Nadu</p>
+          <h1>Gallery</h1>
+      </div>
+      <div class="gallery-images">
+          <div class="gallery-item">
+              <img src="/images/ooty2.jpg" alt="Ooty">
+          </div>
+          <div class="gallery-item">
+              <img src="/images/avalanch.webp" alt="Kodaikanal">
+          </div>
+          <div class="gallery-item">
+              <img src="/images/munnar.jpg" alt="Kanyakumari">
+          </div>
+          <div class="gallery-item">
+            <img src="/images/ooty_gal4.webp" alt="Ooty">
+        </div>
+        <div class="gallery-item">
+            <img src="/images/kodaikananl_gal2.webp" alt="Kodaikanal">
+        </div>
+        <div class="gallery-item">
+            <img src="/images/kanyakumari_gal2.webp" alt="Kanyakumari">
+        </div>
+      </div>
+    </section>
+<!-- Gallery section ends -->
+
+<!-- Footer Section -->
+<footer>
+  <div class="footer-content">
+      <p>&copy; 2024 Travello. All Rights Reserved.</p>
+      <div class="social-icons">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+      </div>
+  </div>
+</footer>
+<!-- Footer Section Ends -->
+
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navigation starts -->
+      <header>
+        <nav>
+            <h2>Travello</h2>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+            <script>
+              function toggleMenu() {
+                const navMenu = document.querySelector('header nav ul');
+                navMenu.classList.toggle('active');
+              }
+            </script>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li class="active"><a href="about.html">About</a></li>
+                <li class="has-dropdown">
+                  <a href="#">Destination</a>
+                  <ul class="dropdown">
+                    <li><a href="ooty.html">Ooty</a></li>
+                    <li><a href="kanniyakumari.html">Kanniyakumari</a></li>
+                    <li><a href="kodaikanal.html">Kodaikanal</a></li>
+                  </ul>
+                  </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+      </header>
+    <!-- Navigation ends -->
+       <!-- hero section -->
+    <section class="about_hero">
+      <h1>About us</h1>
+    </section>
+     <!-- hero section ends -->
+      <!-- content -->
+       
+    <div class="wrapper-content">
+      <div class="main-header">
+          <h1>Tourism in Tamil Nadu</h1>
+          <p>Explore the cradle of Dravidian culture and natural beauty</p>
+      </div>
+      <div class="info-grid">
+          <div class="info-box">
+              <h2>Tourism Management</h2>
+              <p>The Tourism Department and TTDC coordinate with government agencies and private companies to develop the tourism sector and infrastructure.</p>
+          </div>
+          <div class="info-box">
+              <h2>Dravidian Culture</h2>
+              <p>Tamil Nadu is home to one of humanity’s classical civilizations, with traditions in language, dance, poetry, and religion thriving for two millennia.</p>
+          </div>
+          <div class="info-box">
+              <h2>Natural Beauty</h2>
+              <p>Enjoy long sandy beaches, lush forests, hill stations, and waterfalls that offer picturesque and relaxing getaways.</p>
+          </div>
+          <div class="info-box">
+              <h2>Fertile Valleys</h2>
+              <p>The Kaveri valley hosts rice fields and temples like those of Thanjavur, reflecting the grandeur of the Chola kings.</p>
+          </div>
+          <div class="info-box">
+              <h2>Heritage Sites</h2>
+              <p>From Mamallapuram's rock-cut temples to colonial forts, Tamil Nadu is a treasure trove of history and architecture.</p>
+          </div>
+          <div class="info-box">
+              <h2>Friendly People</h2>
+              <p>Tamil Nadu's hospitable and humble people ensure tourists feel at home wherever they go in the state.</p>
+          </div>
+      </div>
+  </div>
+ <!-- Footer Section -->
+<footer>
+  <div class="footer-content">
+      <p>&copy; 2024 Travello. All Rights Reserved.</p>
+      <div class="social-icons">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+      </div>
+  </div>
+</footer>
+<!-- Footer Section Ends -->
+
+
+</body>
+</html>

@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: kaushan;
-    src: url(/font/KaushanScript-Regular.ttf);
+    src: url(../font/KaushanScript-Regular.ttf);
 }
 
 
@@ -433,7 +433,7 @@ footer{
 
 /* ooty */
 .ooty_hero{
-    background: url('/images/ooty3webp.webp') no-repeat center;
+    background: url('../images/ooty3webp.webp') no-repeat center;
     background-size: cover;
     height: 90vh;
     display: flex;
@@ -490,7 +490,7 @@ footer{
 }
 /* Kodaikanal */
 .kodaikanal_hero{
-    background: url('/images/kodaikanal_gal1.webp') no-repeat center;
+    background: url('../images/kodaikanal_gal1.webp') no-repeat center;
     background-size: cover;
     height: 90vh;
     display: flex;
@@ -504,7 +504,7 @@ footer{
 }
 /* kanniyakumari */
 .kanniyakumari_hero{
-    background: url('/images/kanyakumari_gal1.webp') no-repeat center;
+    background: url('../images/kanyakumari_gal1.webp') no-repeat center;
     background-size: cover;
     height: 90vh;
     display: flex;
@@ -519,7 +519,7 @@ footer{
 
 /* contact page */
 .contact_hero{
-    background: url('/images/contact.jpg') no-repeat center;
+    background: url('../images/contact.jpg') no-repeat center;
     background-size: cover;
     height: 90vh;
     display: flex;
@@ -628,7 +628,7 @@ footer{
   }
   /* about us */
   .about_hero{
-    background: url('/images/about.webp') no-repeat center;
+    background: url('../images/about.webp') no-repeat center;
     background-size: cover;
     height: 90vh;
     display: flex;

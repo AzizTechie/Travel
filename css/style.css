@@ -323,7 +323,7 @@ header nav ul li a:hover {
 
 /* third section */
 .third{
-    background: url(images/kanyakumari1.webp) no-repeat center;
+    background: url(.../images/kanyakumari1.webp) no-repeat center;
     background-size: cover;
     height: 80vh;
     display: flex;
